@@ -105,7 +105,8 @@ json
     "lastName": "Doe",
     "accountNumber": "202478123456",
     "accountBal": 0
-  },
+  },  
+  
   "token": "your_jwt_token"
 }  
 
@@ -173,7 +174,7 @@ json
 
 **Endpoint:** GET /api/users  
 
-**Response:**  
+**Response:**    
 
 [
 {
@@ -187,24 +188,30 @@ json
   ...
 ]
 
-]
+]  
 
-**Transaction Endpoints**
-**Initiate a Money Transfer**
-**Endpoint**: POST /api/transfer
+**Transaction Endpoints**  
 
-**Request Body:**
-json
+**Initiate a Money Transfer**  
+
+**Endpoint**: POST /api/transfer  
+
+
+**Request Body:**  
+
+json  
 
 {
   "senderId": "1",
   "receiverId": "2",
   "amount": 100,
   "name": "Transfer Name"
-}
-**Response:**
+}  
 
-json
+**Response:**  
+
+json  
+
 {
   "msg": "Transfer completed successfully",
   "transaction": {
@@ -218,10 +225,13 @@ json
   }
 }
 
-**List User Transfers**
-**Endpoint:** GET /api/transfers?page=1&pageSize=10
-**Response:**
-json
+**List User Transfers**  
+
+**Endpoint:** GET /api/transfers?page=1&pageSize=10  
+
+**Response:**  
+
+json  
 
 {
   "transfers": [
@@ -233,18 +243,22 @@ json
       "transactionStatus": "successful",
       "createdAt": "2024-10-21T12:00:00Z"
     },
-    ...
+    ...  
+    
   ],
   "total": 20,
   "page": 1,
   "pageSize": 10,
   "totalPages": 2
-}
+}  
 
-**Send Money from Counter**
-**Endpoint:** POST /api/sendFromCounter
-**Request Body:**
-json
+**Send Money from Counter**  
+
+**Endpoint:** POST /api/sendFromCounter  
+
+**Request Body:**  
+
+json  
 
 {
   "receiverId": "2",
@@ -252,10 +266,14 @@ json
   "name": "Counter Transfer"
 }
 
-**Get Transfer History**
-**Endpoint:** GET /api/transfer-history/:userId
-**Response:**
-json
+**Get Transfer History**  
+
+**Endpoint:** GET /api/transfer-history/:userId  
+
+**Response:**  
+
+json  
+
 [
   {
     "id": "1",
