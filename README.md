@@ -1,10 +1,10 @@
-#**Money Transfer System**  
+**Money Transfer System**  
 
-###Overview  
+**Overview**  
 
 The Money Transfer System is a web application that allows users to create accounts, log in, and transfer money between accounts securely. This application is built with TypeScript and Express.js, utilizing a PostgreSQL database for data persistence.
 
-##Features  
+**Features**  
 
 User registration and authentication
 Money transfer between users
@@ -12,7 +12,7 @@ Transaction history retrieval
 Password management
 Caching with Redis
 
-##Technologies Used  
+**Technologies Used**  
 
 TypeScript
 Node.js
@@ -21,16 +21,16 @@ PostgreSQL
 Redis
 JWT for authentication
 
-##Setup Instructions  
+**Setup Instructions**  
 
-###Prerequisites  
+**Prerequisites**  
 
 Node.js (v14 or later)
 PostgreSQL (v12 or later)
 Redis
 Git
 
-###Installation Step  
+**Installation Step**  
 
 **Clone the Repository**  
 
@@ -72,22 +72,29 @@ npm run start
 
 Your application should now be running on http://localhost:3000.
 
-**API Documentation**
-**User Endpoints**
-**Register a User**
+**API Documentation**  
 
-**Endpoint:** POST /api/register
-**Request Body:**
-json
+**User Endpoints**  
+
+**Register a User**  
+
+**Endpoint:** POST /api/register  
+
+**Request Body:**  
+
+json  
+
 {
   "email": "user@example.com",
   "username": "user123",
   "password": "securePassword",
   "firstName": "John",
   "lastName": "Doe"
-}
-**Response:**
-json
+}  
+
+**Response:**  
+
+json  
 
 {
   "user": {
@@ -100,18 +107,25 @@ json
     "accountBal": 0
   },
   "token": "your_jwt_token"
-}
+}  
 
-**Log In a User**
-**Endpoint:** POST /api/login
-**Request Body:**
-json
+**Log In a User**  
+
+**Endpoint:** POST /api/login  
+
+**Request Body:**  
+
+json  
+
 {
   "email": "user@example.com",
   "password": "securePassword"
-}
-**Response:**
-json
+}  
+
+**Response:**  
+
+json  
+
 {
   "message": "Successfully logged in",
   "token": "your_jwt_token",
@@ -125,19 +139,26 @@ json
   }
 }
 
-**Change User Password**
-**Endpoint:** PUT /api/change-password/:id
-**Request Body:**
-json
+**Change User Password**  
+
+**Endpoint:** PUT /api/change-password/:id  
+
+**Request Body:**  
+
+json  
+
 {
   "currentPassword": "oldPassword",
   "newPassword": "newSecurePassword"
 }
 
-**Retrieve User by ID**
-**Endpoint:** GET /api/users/:id
-**Response:**
-json
+**Retrieve User by ID**  
+
+**Endpoint:** GET /api/users/:id  
+
+**Response:**  
+
+json  
 
 {
   "email": "user@example.com",
@@ -148,9 +169,12 @@ json
   "accountBal": 0
 }
 
-**Retrieve All Users**
-**Endpoint:** GET /api/users
-**Response:**
+**Retrieve All Users**  
+
+**Endpoint:** GET /api/users  
+
+**Response:**  
+
 [
 {
   "email": "user@example.com",
