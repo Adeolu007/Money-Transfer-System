@@ -1,15 +1,19 @@
-**Money Transfer System**
-**Overview**
+#Money Transfer System  
+
+###Overview  
+
 The Money Transfer System is a web application that allows users to create accounts, log in, and transfer money between accounts securely. This application is built with TypeScript and Express.js, utilizing a PostgreSQL database for data persistence.
 
-**Features**
+##Features  
+
 User registration and authentication
 Money transfer between users
 Transaction history retrieval
 Password management
 Caching with Redis
 
-**Technologies Used**
+##Technologies Used  
+
 TypeScript
 Node.js
 Express.js
@@ -17,24 +21,28 @@ PostgreSQL
 Redis
 JWT for authentication
 
-**Setup Instructions**
-**Prerequisites**
+##Setup Instructions  
+
+###Prerequisites  
+
 Node.js (v14 or later)
 PostgreSQL (v12 or later)
 Redis
 Git
 
-**Installation Steps**
-**Clone the Repository**
+###Installation Step  
+
+**Clone the Repository**  
+
 git clone https://github.com/Adeolu007/Money-Transfer-System.git
 cd Money-Transfer-System
 
-**Install Dependencies**
+**Install Dependencies**  
 
 Install the required packages using npm:
 npm install
 
-**Set Up Environment Variables**
+**Set Up Environment Variables**  
 
 Create a .env file in the root of your project and add the following variables:
 PORT=3000
@@ -46,18 +54,18 @@ DB_PASSWORD=your_db_password
 DB_DATABASE=your_db_name
 REDIS_URL=redis://localhost:6379
 
-**Set Up Database**
+**Set Up Database**  
 
 Make sure PostgreSQL is running, then create the database specified in your .env file.
 createdb your_db_name
 
-**Run Migrations**
+**Run Migrations**  
 
 TypeORM for database migrations
 
 npm run typeorm migration:run
 
-**Start the Application**
+**Start the Application**  
 
 Start the server:
 npm run start
